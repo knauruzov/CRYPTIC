@@ -12,8 +12,8 @@ dotenv_path = Path(__file__).resolve().parent.parent.parent / '.env'
 load_dotenv(dotenv_path)
 
 # API Keys - Try to load from .env, but provide fallback values for development
-BLOCKCYPHER_API_KEY = os.getenv('BLOCKCYPHER_API_KEY', 'e62eccdb5fa448e197ab7f53042e6cf3')
-ETHERSCAN_API_KEY = os.getenv('ETHERSCAN_API_KEY', 'IWH6JTEFFT5GWISSBWTHG9F7118VQY65CM')
+BLOCKCYPHER_API_KEY = os.getenv('BLOCKCYPHER_API_KEY', '***********************')
+ETHERSCAN_API_KEY = os.getenv('ETHERSCAN_API_KEY', '*******************')
 
 # Validate required environment variables
 def validate_env():
